@@ -1,9 +1,17 @@
+var x= 1;
 
+getValue();
+getNewValue();
+console.log(x);
 
-var x=7;
-
-function getName() {
-    console.log("Test Hoisting");
+function getValue(){
+    var x=10;
+    console.log(x);
 }
 
-getName();
+function getNewValue(){
+    var x=100;
+    console.log(x);
+}
+
+// Output will be 10,100,1
